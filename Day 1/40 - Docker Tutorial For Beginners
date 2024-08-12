@@ -3,7 +3,6 @@
 ## Docker Architecture
 
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/88d17yqjbir9ncz5tpun.jpg)
 
 ### Components:
 1. **Client**: The interface through which a user interacts with Docker. Commands like `docker build`, `docker push`, `docker pull`, and `docker run` are issued from here.
