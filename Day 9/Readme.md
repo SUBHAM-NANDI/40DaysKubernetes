@@ -33,7 +33,7 @@ spec:
     app: backend
   ports:
     - port: 80
-      targetPort: 8080
+      targetPort: 80
 ```
 
 **Explanation**:
@@ -76,7 +76,8 @@ spec:
   selector:
     env: demo
   ports:
-  - port: 80
+  - nodePort: 30001
+    port: 80
     targetPort: 80
     nodePort: 30001
 ```
@@ -148,14 +149,14 @@ spec:
     app: backend
   ports:
     - port: 80
-      targetPort: 8080
+      targetPort: 80
 ```
 
 **Explanation**:
 - **type: LoadBalancer**: Specifies that a cloud provider's load balancer should be used.
 - **selector**: Matches the backend pods with the label `app: backend`.
 - **port**: Exposes the service on port `80` externally.
-- **targetPort**: Refers to the internal application port (`8080`).
+- **targetPort**: Refers to the internal application port (`80`).
 
 #### Deploying a LoadBalancer Service
 1. **Apply the Service**:
