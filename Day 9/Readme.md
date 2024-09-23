@@ -190,12 +190,3 @@ spec:
 Once this service is applied, any internal application that needs to access the external database can use `external-db` as the hostname, which resolves to `db.example.com`.
 
 ---
-
-### Conclusion
-Kubernetes services offer flexible networking options to expose applications both internally and externally. Here's a quick summary of the three primary service types:
-
-- **ClusterIP**: Ideal for internal communication within the cluster.
-- **NodePort**: Used for exposing a service externally on a specific node port.
-- **LoadBalancer**: Leverages cloud provider infrastructure to handle external traffic at scale.
-
-Each service type serves different use cases and helps build scalable, resilient applications on Kubernetes. With this knowledge, you can make informed decisions about how to expose your services and ensure smooth communication between different components within your Kubernetes cluster.
