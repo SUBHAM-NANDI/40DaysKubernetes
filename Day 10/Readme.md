@@ -1,4 +1,4 @@
-GitHub link - 
+
 ### Step 1: Introduction to Kubernetes Namespaces
 
 **What are namespaces?**
